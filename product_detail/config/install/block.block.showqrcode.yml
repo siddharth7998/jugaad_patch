@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - product_detail
+    - system
+  theme:
+    - bartik
+id: showqrcode
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: show_qr_code
+settings:
+  id: show_qr_code
+  label: 'Show QR Code'
+  label_display: '0'
+  provider: product_detail
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '*'
